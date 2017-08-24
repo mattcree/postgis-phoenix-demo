@@ -1,0 +1,13 @@
+<h2>Show Location</h2>
+
+<ul>
+
+  <li>
+    <strong>Location:</strong>
+    <%= inspect @location.location %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: location_path(@conn, :edit, @location) %></span>
+<span><%= link "Back", to: location_path(@conn, :index) %></span>
